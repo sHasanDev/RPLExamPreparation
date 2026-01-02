@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Gallery | Liberation War Archive</title>
+</head>
+<body>
+    <header class="sticky top-0 z-99">
+        <nav class="bg-green-600 border-gray-200 dark:bg-gray-900">
+            <div class="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="h-10 w-10 rounded-full bg-red-600 flex items-center justify-center"><p class="font-semibold text-white">1971</p></span>
+                    <span class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">Libaration War Archive</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border text-sx lg:text-lg border-gray-100 rounded-lg md:flex-row md:space-x-4 lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                        <li>
+                            <a href="./index.html" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                        </li>
+                        <li>
+                        <a href="./document.html" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Documents</a>
+                        </li>
+                        <li>
+                            <a href="./interview.html" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Interviews</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Gallery</a>
+                        </li>
+                        <li>
+                        <a href="./contact.html" class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-full">
+
+        <section class="max-w-6xl mx-auto px-4 py-16 bg-red-400">
+            <h1 class="text-white text-5xl font-bold mb-4">Liberation War Photo Archive</h1>
+            <p class="text-gray-200 text-lg leading-relaxed max-w-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, labore quasi praesentium ut voluptate iste at deserunt asperiores quo. Cum vitae eum et dolore? Officiis reiciendis commodi quaerat sit iure.</p>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 py-16 bg-green-100 my-3">
+            <h2 class="text-3xl font-bold mb-8">Photo Categories</h2>
+            <div class="">
+                <div class="mb-4 border-b border-default">
+                    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                        <li class="me-2" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-base" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Battlefields</button>
+                        </li>
+                        <li class="me-2" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Historic Moments</button>
+                        </li>
+                        <li class="me-2" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Leaders</button>
+                        </li>
+                        <li role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Refugees</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="default-tab-content">
+                    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/840576.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://tfe-bd.sgp1.cdn.digitaloceanspaces.com/uploads/1576164022.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTs8s9lgSMcD4DlhBzVC-sSIJrI5XxtWtAQ&s" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://i.guim.co.uk/img/static/Guardian/world/gallery/2008/apr/07/bangladesh1971/mangun-4319.jpg?width=375&dpr=1&s=none&crop=none" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://en.banglapedia.org/images/b/ba/WarOfLiberationTraining.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/390695.jpg" alt="" class="w-[330px] h-[200px]">
+                        </div>
+                    </div>
+                    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/840576.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://tfe-bd.sgp1.cdn.digitaloceanspaces.com/uploads/1576164022.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTs8s9lgSMcD4DlhBzVC-sSIJrI5XxtWtAQ&s" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://i.guim.co.uk/img/static/Guardian/world/gallery/2008/apr/07/bangladesh1971/mangun-4319.jpg?width=375&dpr=1&s=none&crop=none" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://en.banglapedia.org/images/b/ba/WarOfLiberationTraining.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/390695.jpg" alt="" class="w-[330px] h-[200px]">
+                        </div>
+                    </div>
+                    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/840576.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://tfe-bd.sgp1.cdn.digitaloceanspaces.com/uploads/1576164022.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTs8s9lgSMcD4DlhBzVC-sSIJrI5XxtWtAQ&s" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://i.guim.co.uk/img/static/Guardian/world/gallery/2008/apr/07/bangladesh1971/mangun-4319.jpg?width=375&dpr=1&s=none&crop=none" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://en.banglapedia.org/images/b/ba/WarOfLiberationTraining.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/390695.jpg" alt="" class="w-[330px] h-[200px]">
+                        </div>
+                    </div>
+                    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/840576.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://tfe-bd.sgp1.cdn.digitaloceanspaces.com/uploads/1576164022.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTs8s9lgSMcD4DlhBzVC-sSIJrI5XxtWtAQ&s" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://i.guim.co.uk/img/static/Guardian/world/gallery/2008/apr/07/bangladesh1971/mangun-4319.jpg?width=375&dpr=1&s=none&crop=none" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://en.banglapedia.org/images/b/ba/WarOfLiberationTraining.jpg" alt="" class="w-[330px] h-[200px]">
+                            <img src="https://www.liberationwarmuseumbd.org/public/images/390695.jpg" alt="" class="w-[330px] h-[200px]">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 py-16 bg-green-100 my-3">
+            <h2 class="text-3xl font-bold mb-10">Featured Gallery</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Photo Card 1 -->
+                <div class="rounded-xl overflow-hidden shadow-lg gallery-hover bg-black group" data-aos="zoom-in">
+                <img src="https://i.ibb.co/0K2xT4V/war1.jpg" class="w-full h-64 object-cover transition duration-500" />
+                <div class="p-5 text-white">
+                    <h3 class="text-xl font-semibold mb-2">Freedom Fighters in Action</h3>
+                    <p class="text-sm text-gray-300">Captured in 1971 during a frontline mission.</p>
+                </div>
+                </div>
+
+                <!-- Photo Card 2 -->
+                <div class="rounded-xl overflow-hidden shadow-lg gallery-hover bg-black group" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://i.ibb.co/0VJ0pLj/war2.jpg" class="w-full h-64 object-cover transition duration-500" />
+                <div class="p-5 text-white">
+                    <h3 class="text-xl font-semibold mb-2">Refugee Families</h3>
+                    <p class="text-sm text-gray-300">Millions were displaced during the war.</p>
+                </div>
+                </div>
+
+                <!-- Photo Card 3 -->
+                <div class="rounded-xl overflow-hidden shadow-lg gallery-hover bg-black group" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://i.ibb.co/vY6N3Qq/war3.jpg" class="w-full h-64 object-cover transition duration-500" />
+                <div class="p-5 text-white">
+                    <h3 class="text-xl font-semibold mb-2">Historic Declaration Day</h3>
+                    <p class="text-sm text-gray-300">Rare photograph of a defining moment.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-20 bg-red-600 text-white" data-aos="zoom-in">
+            <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold mb-4">Download High-Quality Photos</h2>
+            <p class="mb-8 text-lg">Get access to rare historical images in high resolution for research and educational use.</p>
+            <a href="assets/photos.zip" download class="bg-white text-red-600 font-semibold px-8 py-3 rounded-xl shadow hover:bg-gray-200 transition-all inline-block">Download Archive</a>
+            </div>
+        </section>
+
+  
+        <section class="max-w-6xl mx-auto px-4 py-16 bg-green-100 my-3"></section>
+        <section class="max-w-6xl mx-auto px-4 py-16 bg-green-100 my-3"></section>
+        <section class="max-w-6xl mx-auto px-4 py-16 bg-green-100 my-3"></section>
+
+        <section class="max-w-6xl mx-auto px-4 py-16 bg-red-600 my-3">
+            <h2 class="text-3xl font-semibold mb-6">Contribute to the Archive</h2>
+            <p class="text-lg text-gray-600 mb-10">Help us preserve the memories of the glorious Liberation War by sharing documents, photos, and testimonies.</p>
+
+            <div class="p-8 bg-gray-50 rounded-lg shadow">
+                <p class="text-gray-700 leading-relaxed mb-4">You can send your materials through the contribution form or contact the administrators directly. Each contribution helps future generations understand the true essence of independence.</p>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+
+    <footer class="bg-green-100 rounded-lg shadow-sm">
+        <div class="w-full max-w-6xl mx-auto p-4 md:py-8 flex flex-col md:flex-row items-center justify-center">
+            
+            <span class="md:flex-3 text-sm text-gray-500 text-center dark:text-gray-400">
+            © 2025 <a href="./index.html" class="hover:underline">Liberation War Archive</a>. All Rights Reserved.
+            </span>
+
+            <span id="clock" class="text-sm text-center md:ml-auto"></span>
+
+        </div>
+    </footer>
+
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
